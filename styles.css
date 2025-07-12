@@ -345,7 +345,7 @@
             background:linear-gradient(to bottom, 
             #bb00ff,black,rgb(19, 18, 18),black );
             color: var(--black-color);
-            height: 200vh;
+            height: 210vh;
         }
 
         .education-container {
@@ -536,7 +536,7 @@
         #activities {
             background:linear-gradient(to bottom, 
             #bb00ff,rgb(19, 18, 18),rgb(19, 19, 19),black,black );
-            height: 150vh;
+            height: 165vh;
         }
 
         .activities-container {
