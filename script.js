@@ -1,6 +1,6 @@
 // =======================Mobile Menu Toggle
-//const hamburger = document.querySelector('.hamburger');
-//const navLinks = document.querySelector('.nav-links');
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
@@ -24,7 +24,7 @@ document.addEventListener('click', (e) => {
 });
 
 // =======================Scroll to Top Button Show/Hide
-//const scrollTopBtn = document.querySelector('.scroll-top'); // =====================after changed
+ const scrollTopBtn = document.querySelector('.scroll-top'); // =====================after changed
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
@@ -261,48 +261,3 @@ ScrollReveal().reveal(".containerF", {
 });
 
 
-// =======================Mobile Menu Toggle
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-    });
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-    }
-});
-
-// =======================Scroll to Top Button Show/Hide
-const scrollTopBtn = document.querySelector('.scroll-top');
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        scrollTopBtn.classList.add('active');
-    } else {
-        scrollTopBtn.classList.remove('active');
-    }
-});
-
-// =========================Scroll to top functionality
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-// ... existing code ...
