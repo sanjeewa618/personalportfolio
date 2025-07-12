@@ -1136,3 +1136,216 @@
                 grid-template-columns: 1fr;
             }
         }
+
+/* ------------------- RESPONSIVE DESIGN(after added) ------------------- */
+
+/* Tablets and below (≤992px) */
+@media (max-width: 992px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    color: var(--light-color);
+    margin-right: 20px;
+  }
+
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .hero-img img {
+    width: 60vw;
+    margin: 30px auto 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-img {
+    margin: 0 auto;
+  }
+
+  .about-text p {
+    width: auto;
+  }
+
+  .education-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .gallery__wrapper {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery__card img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .steps__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .activity {
+    width: 100%;
+  }
+
+  .activities-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    margin: 0 auto;
+  }
+}
+
+/* Mobile devices (≤768px) */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .btn,
+  .btn1,
+  .btn2,
+  .btn3 {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .education {
+    padding: 30px;
+  }
+
+  .gallery__card img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .section__description {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Small phones (≤576px) */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 60px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery__card img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .steps__box {
+    width: 100%;
+  }
+
+  .footer-links,
+  .footer-social {
+    text-align: center;
+  }
+
+  .contact-item i {
+    font-size: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+}
