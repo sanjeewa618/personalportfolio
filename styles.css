@@ -1951,7 +1951,7 @@
 /* Mobile */
 @media (max-width: 768px) {
   #achievements {
-    padding: 40px 20px ;
+    padding: 40px 10px ;
     height: 1700px;
    width: auto;
   }
