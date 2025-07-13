@@ -1529,6 +1529,7 @@
         padding: 0 20px;
     }
     
+    
     .activity {
         width: 100%;
         margin-left: 0;
@@ -1539,7 +1540,7 @@
 /* Mobile (768px and below) */
 @media (max-width: 768px) {
     .activity {
-        padding: 25px 20px;
+        padding: 15px 20px;
     }
     
     .activity h4 {
@@ -1950,8 +1951,8 @@
 /* Mobile */
 @media (max-width: 768px) {
   #achievements {
-    padding: 40px 130px ;
-    height: 2000px;
+    padding: 40px 20px ;
+    height: 1700px;
    width: auto;
   }
 
